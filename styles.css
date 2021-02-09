@@ -27,7 +27,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #445963;
-  grid-template-areas: "seven eight nine" "four five six" "three two one";
+  grid-template-areas: "seven eight nine" "four five six" "one two three";
 }
 .calc .calc-keys .num {
   height: 6rem;
