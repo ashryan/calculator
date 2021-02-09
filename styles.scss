@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #fbe9e7;
+}
+
+.calc-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.calc {
+
+    display: grid;
+    grid-template-areas: "nums func";
+    grid-gap:0;
+    height:35rem;
+    width: 20rem;
+    border: 1px solid #bdbdbd;
+
+    .calc-keys {
+        grid-area:"nums";
+        display: grid;
+        grid-gap: 0rem;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        background-color: #445963;
+        grid-template-areas: "seven eight nine"
+        "four five six"
+        "three two one";
+
+        .num {
+            height: 6rem;
+            width: 4rem;
+            background: none;
+            color:white;
+            font-size: 3rem;
+            border: none;
+        }
+
+        .num:hover {
+            color:black;
+        }
+
+        .seven {
+            grid-area:"seven";
+        }
+
+        .eight {
+            grid-area:"eight";
+            
+        }
+
+        .nine{
+            grid-area:"nine"
+        }
+
+        .six {
+            grid-area:"six"
+        }
+
+        .five {
+            grid-area:"five"
+        }
+
+        .four {
+            grid-area:"four"
+        }
+
+        .three {
+            grid-area:"three"
+        }
+
+        .two {
+            grid-area:"two"
+        }
+
+        .one {
+            grid-area:"one"
+        }
+
+        .clear {
+            grid-area:"clear"
+        }
+
+        .divide {
+            grid-area: "divide"
+        }
+
+        .times {
+            grid-area:"times"
+        }
+
+        .subtract {
+            grid-area:"subtract"
+        }
+
+        .equals {
+            grid-area: "equals"
+        }
+
+    }
+
+
+
+    .func-keys {
+
+        grid-area:"func";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: #445963;
+        border-left: 2px solid #1565c0;
+        align-items: center;
+       
+
+        .num {
+            height: 4rem;
+            width: 4rem;
+            background: none;
+            color:white;
+            font-size: 2.5rem;
+            border:none;
+            
+        
+        }
+
+        .num:hover{
+            color:black;
+        }
+
+    }
+
+}
+
+.screen {
+    width:20rem;
+    height: 8rem;
+    background: white;
+    border: 1px solid #bdbdbd;
+    border-bottom: none;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #fbe9e7;
+}
+
+.calc-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.calc {
+  display: grid;
+  grid-template-areas: "nums func";
+  grid-gap: 0;
+  height: 35rem;
+  width: 20rem;
+  border: 1px solid #bdbdbd;
+}
+.calc .calc-keys {
+  grid-area: "nums";
+  display: grid;
+  grid-gap: 0rem;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #445963;
+  grid-template-areas: "seven eight nine" "four five six" "three two one";
+}
+.calc .calc-keys .num {
+  height: 6rem;
+  width: 4rem;
+  background: none;
+  color: white;
+  font-size: 3rem;
+  border: none;
+}
+.calc .calc-keys .num:hover {
+  color: black;
+}
+.calc .calc-keys .seven {
+  grid-area: "seven";
+}
+.calc .calc-keys .eight {
+  grid-area: "eight";
+}
+.calc .calc-keys .nine {
+  grid-area: "nine";
+}
+.calc .calc-keys .six {
+  grid-area: "six";
+}
+.calc .calc-keys .five {
+  grid-area: "five";
+}
+.calc .calc-keys .four {
+  grid-area: "four";
+}
+.calc .calc-keys .three {
+  grid-area: "three";
+}
+.calc .calc-keys .two {
+  grid-area: "two";
+}
+.calc .calc-keys .one {
+  grid-area: "one";
+}
+.calc .calc-keys .clear {
+  grid-area: "clear";
+}
+.calc .calc-keys .divide {
+  grid-area: "divide";
+}
+.calc .calc-keys .times {
+  grid-area: "times";
+}
+.calc .calc-keys .subtract {
+  grid-area: "subtract";
+}
+.calc .calc-keys .equals {
+  grid-area: "equals";
+}
+.calc .func-keys {
+  grid-area: "func";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #445963;
+  border-left: 2px solid #1565c0;
+  align-items: center;
+}
+.calc .func-keys .num {
+  height: 4rem;
+  width: 4rem;
+  background: none;
+  color: white;
+  font-size: 2.5rem;
+  border: none;
+}
+.calc .func-keys .num:hover {
+  color: black;
+}
+
+.screen {
+  width: 20rem;
+  height: 8rem;
+  background: white;
+  border: 1px solid #bdbdbd;
+  border-bottom: none;
+}
