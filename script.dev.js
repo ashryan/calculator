@@ -47,6 +47,9 @@ var _loop = function _loop(i) {
     } else if (funcCol[i].innerHTML == "^") {
       setHistory(getOutput() + "**");
       setOutput("0");
+    } else if (funcCol[i].innerHTML == "π") {
+      setHistory(getOutput() + "*3.14");
+      setOutput("0");
     }
   });
 };

@@ -62,7 +62,10 @@ for(let i = 0; i < funcCol.length; i++) {
             setOutput("0")
         }
 
-
+        else if(funcCol[i].innerHTML == "π") {
+            setHistory(getOutput() + "*3.14")
+            setOutput("0")
+        }
 
     })
 }
