@@ -4,6 +4,15 @@
   background: #fbe9e7;
 }
 
+.num {
+  height: 6rem;
+  width: 4rem;
+  background: none;
+  color: white;
+  font-size: 3rem;
+  border: none;
+}
+
 .calc-con {
   display: flex;
   flex-direction: column;
@@ -29,16 +38,9 @@
   background-color: #445963;
   grid-template-areas: "seven eight nine" "four five six" "one two three";
 }
-.calc .calc-keys .num {
-  height: 6rem;
-  width: 4rem;
-  background: none;
-  color: white;
-  font-size: 3rem;
-  border: none;
-}
 .calc .calc-keys .num:hover {
   color: black;
+  border: 2px solid white;
 }
 .calc .calc-keys .seven {
   grid-area: "seven";
@@ -109,4 +111,29 @@
   background: white;
   border: 1px solid #bdbdbd;
   border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+.screen .value {
+  background-color: white;
+  padding-right: 5px;
+}
+.screen #history-value {
+  color: #bcbcbc;
+}
+.screen #output-value {
+  font-size: 3.5rem;
+}
+
+.sci-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci-con .scientific {
+  background-color: #445963;
 }

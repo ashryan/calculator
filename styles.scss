@@ -4,6 +4,16 @@
     background: #fbe9e7;
 }
 
+.num {
+    height: 6rem;
+    width: 4rem;
+    background: none;
+    color:white;
+    font-size: 3rem;
+    border:none;
+    
+}
+
 .calc-con {
     display: flex;
     flex-direction: column;
@@ -33,17 +43,11 @@
         "four five six"
         "one two three";
 
-        .num {
-            height: 6rem;
-            width: 4rem;
-            background: none;
-            color:white;
-            font-size: 3rem;
-            border: none;
-        }
+   
 
         .num:hover {
             color:black;
+            border: 2px solid white;
         }
 
         .seven {
@@ -143,4 +147,37 @@
     background: white;
     border: 1px solid #bdbdbd;
     border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-size: 2em;
+    font-family: sans-serif;
+
+    .value {
+        background-color: white;
+        padding-right: 5px;
+    }
+
+    #history-value {
+       color:#bcbcbc;
+    }
+
+    #output-value {
+        font-size: 3.5rem;
+    }
+
+
+}
+
+.sci-con{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .scientific {
+
+        background-color: #445963;
+    }
+
 }

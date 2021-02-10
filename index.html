@@ -5,39 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Calculator</title>
+    <script type="module"src="script.js"></script>
 </head>
 <body>
 
-<div class="calc-con">
-        <div class="screen"></div>
-        <div class="calc">
-        <div class="calc-keys">
-                <button class="seven num">7</button>
-                <button class="eight num">8</button>
-                <button class="nine num">9</button>
-                <button class="four num">4</button>
-                <button class="five num">5</button>
-                <button class="six num">6</button>
-                <button class="one num">1</button>
-                <button class="two num">2</button>
-                <button class="three num">3</button>
-                <button class="zero num">0</button>
-                <button class="decimal num">.</button>
-                <button class="equals num">=</button>
+<div class="sci-con">
+    <div class="calc-con">
+            <div class="screen">
+                <div id="history">
+                    <p id="history-value" class="value">0</p>
+                </div>
+                <div id="output">
+                    <p id="output-value" class="value">0</p>
+                </div>
 
-            </div> 
+            </div>
+            <div class="calc">
+            <div class="calc-keys">
+                    <button class="seven num num-char">7</button>
+                    <button class="eight num num-char">8</button>
+                    <button class="nine num num-char">9</button>
+                    <button class="four num num-char">4</button>
+                    <button class="five num num-char">5</button>
+                    <button class="six num num-char">6</button>
+                    <button class="one num num-char">1</button>
+                    <button class="two num num-char">2</button>
+                    <button class="three num num-char">3</button>
+                    <button class="zero num num-char">0</button>
+                    <button class="decimal num num-char">.</button>
+                    <button class="equals num func">=</button>
 
-            <div class="func-keys">
-                <button class="clear num">AC</button>
-                <button class="add num">+</button>
-                <button class="subtract num">-</button>
-                <button class="times num">x</button>
-                <button class="divide num">÷</button>
+                </div> 
+
+                <div class="func-keys">
+                    <button class="clear num func">AC</button>
+                    <button class="divide num func">÷</button>
+                    <button class="times num func">x</button>
+                    <button class="subtract num func">-</button>
+                    <button class="add num func">+</button>
+            
             </div>
         </div>
+    </div>
+    <div class="scientific">
+        <button class="square num func">^</button>
 </div>
-   
 </body>
 </html>
