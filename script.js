@@ -57,6 +57,12 @@ for(let i = 0; i < funcCol.length; i++) {
             setOutput("0")
         }
 
+        else if(funcCol[i].innerHTML == "^") {
+            setHistory(getOutput() + "**")
+            setOutput("0")
+        }
+
+
 
     })
 }

@@ -44,6 +44,9 @@ var _loop = function _loop(i) {
     } else if (funcCol[i].innerHTML == "÷") {
       setHistory(getOutput() + "/");
       setOutput("0");
+    } else if (funcCol[i].innerHTML == "^") {
+      setHistory(getOutput() + "**");
+      setOutput("0");
     }
   });
 };
