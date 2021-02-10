@@ -50,6 +50,9 @@ var _loop = function _loop(i) {
     } else if (funcCol[i].innerHTML == "π") {
       setHistory(getOutput() + "*3.14");
       setOutput("0");
+    } else if (funcCol[i].innerHTML == "√") {
+      setHistory(getOutput() + "**0.5");
+      setOutput("0");
     }
   });
 };
