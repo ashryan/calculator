@@ -38,6 +38,10 @@ var _loop = function _loop(i) {
       var history = document.querySelector("#history-value").innerHTML;
       setHistory(getHistory() + getOutput());
       setOutput(result);
+
+      if (getOutput().length > 11) {
+        setOutput("Error");
+      }
     } else if (funcCol[i].innerHTML == "x") {
       setHistory(getOutput() + "*");
       setOutput("0");

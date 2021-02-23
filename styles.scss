@@ -1,8 +1,12 @@
+$color-inborder: #81c784;
+
 *{
     margin: 0;
     padding: 0;
     background: #fbe9e7;
 }
+
+
 
 .num {
     height: 6rem;
@@ -30,6 +34,7 @@
     height:35rem;
     width: 20rem;
     border: 1px solid #bdbdbd;
+    border-right: none;
 
     .calc-keys {
         grid-area:"nums";
@@ -43,11 +48,15 @@
         "four five six"
         "one two three";
 
+        .top {
+            border-top: 2px solid $color-inborder;
+        }
+
    
 
         .num:hover {
             color:black;
-            border: 2px solid white;
+           
         }
 
         .seven {
@@ -107,6 +116,7 @@
             grid-area: "equals"
         }
 
+
     }
 
 
@@ -118,7 +128,8 @@
         flex-direction: column;
         justify-content: space-evenly;
         background: #445963;
-        border-left: 2px solid #1565c0;
+        border-left: 2px solid $color-inborder;
+        border-right:none;
         align-items: center;
        
 
@@ -175,9 +186,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .scientific {
+   
+     
+    
+    .sci-funcs {
 
         background-color: #445963;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:35rem;
+        width: 5rem;
+        margin-top: 8.1rem;
+        border-left:2px solid #b71c1c;
+        .hidden {
+             display: none;
+        }
+        
     }
 
-}
+}    
+
+
+
+
+

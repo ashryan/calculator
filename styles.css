@@ -28,6 +28,7 @@
   height: 35rem;
   width: 20rem;
   border: 1px solid #bdbdbd;
+  border-right: none;
 }
 .calc .calc-keys {
   grid-area: "nums";
@@ -38,9 +39,11 @@
   background-color: #445963;
   grid-template-areas: "seven eight nine" "four five six" "one two three";
 }
+.calc .calc-keys .top {
+  border-top: 2px solid #81c784;
+}
 .calc .calc-keys .num:hover {
   color: black;
-  border: 2px solid white;
 }
 .calc .calc-keys .seven {
   grid-area: "seven";
@@ -90,7 +93,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   background: #445963;
-  border-left: 2px solid #1565c0;
+  border-left: 2px solid #81c784;
+  border-right: none;
   align-items: center;
 }
 .calc .func-keys .num {
@@ -134,6 +138,17 @@
   justify-content: center;
   align-items: center;
 }
-.sci-con .scientific {
+.sci-con .sci-funcs {
   background-color: #445963;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  width: 5rem;
+  margin-top: 8.1rem;
+  border-left: 2px solid #b71c1c;
+}
+.sci-con .sci-funcs .hidden {
+  display: none;
 }

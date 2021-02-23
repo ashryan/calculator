@@ -45,6 +45,9 @@ for(let i = 0; i < funcCol.length; i++) {
 
              setHistory(getHistory() + getOutput())
              setOutput(result)
+             if (getOutput().length > 11) {
+                setOutput("Error") }
+
         }
 
         else if(funcCol[i].innerHTML == "x") {
@@ -92,6 +95,7 @@ for(let i = 0; i < numCol.length; i++) {
     } 
   )
 }
+
 
 
 
